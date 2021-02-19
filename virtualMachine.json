@@ -59,9 +59,9 @@
   },
   "variables": {
     "clusterName": "[toLower(parameters('clusterName'))]",
-    "virtualMachineScaleSetName": "vtm-prd-vmss-01",
-    "networkInterfaceName": "[concat(variables('clusterName'), '-nic-01')]",
-    "ipConfigName": "[concat(variables('clusterName'),'-ipconfig')]",
+    "virtualMachineScaleSetName": "vtm-prd-vmss-02",
+    "networkInterfaceName": "[concat(variables('clusterName'), '-nic-02')]",
+    "ipConfigName": "[concat(variables('clusterName'),'-ipconfig02')]",
     "linuxConfiguration": {
       "disablePasswordAuthentication": 
         "[equals(parameters('authenticationType'),'sshPublicKey')]",
@@ -75,7 +75,7 @@
       }
     },
     "osprofile": {
-	  "computerNamePrefix": "[concat(variables('clusterName'), 'pre')]",
+	  "computerNamePrefix": "[concat(variables('clusterName'), 'prd')]",
       "adminUsername": "[parameters('adminUsername')]",
       "adminPassword": 
         "[if(equals(parameters('authenticationType'),'sshPublicKey'),json('null'),parameters('adminPassword'))]",
