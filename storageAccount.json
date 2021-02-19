@@ -165,7 +165,7 @@
         }
     },
    "variables": {
-	"storageAccountName": "[concat(parameters('clusterName'),'prdsastd01')]",
+	"storageAccountName": "[concat(parameters('clusterName'),'prdsastd02')]",
   },   
     "resources": [
         {
