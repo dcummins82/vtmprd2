@@ -158,7 +158,7 @@
 
         "isInfrastructureEncryptionEnabled": {
             "type": "bool",
-            "defaultValue": false,
+            "defaultValue": true,
             "metadata": {
 				"description": "Enables double encryption. Can only be enabled at deployment time and can't be enabled on existing storage accounts"
 			}
